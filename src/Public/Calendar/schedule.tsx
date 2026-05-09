@@ -1,7 +1,7 @@
 export function Schedule() {
     return (
         <section className="p-10 bg-white dark:bg-gray-900 rounded-lg shadow-lg transition-colors duration-300">
-            <div className="container px-6 py-10 mx-auto">
+            <div>
                 {/* Title */}
                 <h1 className="text-4xl font-bold text-gray-800 dark:text-white text-center transition-colors">
                     Weekly Schedule
