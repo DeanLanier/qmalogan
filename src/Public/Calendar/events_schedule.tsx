@@ -1,4 +1,5 @@
 import Calendar from './calendar';
+import { Events } from "./events";
 import { Schedule } from './schedule';
 
 interface EventsScheduleProps {
@@ -16,8 +17,11 @@ export function Events_Schedule({ isAdmin }: EventsScheduleProps) {
                     Events & Schedule
                 </h1>
 
-                {/* Calendar Component */}
-                <Calendar isAdmin={isAdmin} />
+                {/* Calendar Component - temporarily disabled */}
+                { false && <Calendar isAdmin={isAdmin} /> }
+
+                {/* Events Component */}
+                <Events />
 
                 {/* Schedule Component */}
                 <Schedule />
