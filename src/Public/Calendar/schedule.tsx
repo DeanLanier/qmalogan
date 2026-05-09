@@ -15,23 +15,23 @@ export function Schedule() {
                         {
                             day: "Monday",
                             events: [
-                                "5:00 PM - Taekwondo / Kids (Under 12)",
-                                "6:00 PM - Taekwondo / Adults (Over 12)",
+                                "5:00 PM - Martial Arts / Kids (Under 12)",
+                                "6:00 PM - Martial Arts / Adults (Over 12)",
                             ],
                         },
                         {
                             day: "Tuesday",
                             events: [
                                 "4:00 PM - Little Tigers (Ages 4-5)",
-                                "5:00 PM - Taekwondo Sparring / Kids (Under 12)",
-                                "6:00 PM - Taekwondo Sparring / Adults (Over 12)",
+                                "5:00 PM - Sparring / Kids (Under 12)",
+                                "6:00 PM - Sparring / Adults (Over 12)",
                             ],
                         },
                         {
                             day: "Wednesday",
                             events: [
-                                "5:00 PM - Taekwondo Forms / Kids (Under 12)",
-                                "6:00 PM - Taekwondo Forms / Adults (Over 12)",
+                                "5:00 PM - Forms / Kids (Under 12)",
+                                "6:00 PM - Forms / Adults (Over 12)",
                             ],
                         },
                         {
@@ -56,7 +56,7 @@ export function Schedule() {
                         >
                             {/* Day Label */}
                             <strong className="text-2xl text-gray-800 dark:text-white border-l-4 border-yellow-400 pl-4">
-                                {day}:
+                                {day}
                             </strong>
                             {/* List of Events */}
                             {events.map((event, index) => (
