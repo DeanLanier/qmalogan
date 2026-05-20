@@ -23,7 +23,7 @@ export function Schedule() {
                             day: "Tuesday",
                             events: [
                                 "3:00 PM - Kyuki-do / Homeschool  (Ages 5-12)",
-                                "4:00 PM - Little Tigers (Ages 3-5)",
+                                "4:00 PM - Kyuki-do / Little Tigers (Ages 3-5)",
                                 "5:00 PM - Kyuki-do / Kids (Ages 6-12)",
                                 "6:00 PM - Kyuki-do / Adults (Ages 12+)",
                             ],
@@ -39,7 +39,7 @@ export function Schedule() {
                             day: "Thursday",
                             events: [
                                 "3:00 PM - Kyuki-do / Homeschool  (Ages 5-12)",
-                                "4:00 PM - Little Tigers (Ages 3-5)",
+                                "4:00 PM - Kyuki-do / Little Tigers (Ages 3-5)",
                                 "5:00 PM - Kyuki-do / Kids (Ages 6-12)",
                                 "6:00 PM - Kyuki-do / Adults (Ages 12+)",
                             ],
