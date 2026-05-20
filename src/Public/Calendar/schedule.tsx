@@ -15,38 +15,39 @@ export function Schedule() {
                         {
                             day: "Monday",
                             events: [
-                                "5:00 PM - Martial Arts / Kids (Under 12)",
-                                "6:00 PM - Martial Arts / Adults (Over 12)",
+                                "5:00 PM - Kyuki-do / Kids (Ages 6-12)",
+                                "6:00 PM - Kyuki-do / Adults (Ages 12+)",
                             ],
                         },
                         {
                             day: "Tuesday",
                             events: [
-                                "4:00 PM - Little Tigers (Ages 4-5)",
-                                "5:00 PM - Sparring / Kids (Under 12)",
-                                "6:00 PM - Sparring / Adults (Over 12)",
+                                "3:00 PM - Kyuki-do / Homeschool  (Ages 5-12)",
+                                "4:00 PM - Little Tigers (Ages 3-5)",
+                                "5:00 PM - Kyuki-do / Kids (Ages 6-12)",
+                                "6:00 PM - Kyuki-do / Adults (Ages 12+)",
                             ],
                         },
                         {
                             day: "Wednesday",
                             events: [
-                                "5:00 PM - Forms / Kids (Under 12)",
-                                "6:00 PM - Forms / Adults (Over 12)",
+                                "5:00 PM - Kyuki-do / Kids (Ages 6-12)",
+                                "6:00 PM - Kyuki-do / Adults (Ages 12+)",
                             ],
                         },
                         {
                             day: "Thursday",
                             events: [
-                                "4:00 PM - Little Tigers (Ages 4-5)",
-                                "5:00 PM - Judo | Hapkido / Kids (Under 12)",
-                                "6:00 PM - Judo | Hapkido / Adults (Over 12)",
+                                "3:00 PM - Kyuki-do / Homeschool  (Ages 5-12)",
+                                "4:00 PM - Little Tigers (Ages 3-5)",
+                                "5:00 PM - Kyuki-do / Kids (Ages 6-12)",
+                                "6:00 PM - Kyuki-do / Adults (Ages 12+)",
                             ],
                         },
                         {
                             day: "Saturday",
                             events: [
-                                "8:00 AM - Advanced Strength & Conditioning",
-                                "9:30 AM - Beginning Strength & Conditioning",
+                                "8:00 AM - Strength & Conditioning",
                             ],
                         },
                     ].map(({ day, events }) => (
