@@ -13,7 +13,7 @@ export function Events() {
                 <ul className="space-y-10">
                     {[
                         {
-                            event: "Summer Camps Registration",
+                            event: "Summer Camps",
                             description: [
                                 <span>Please fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSdI_Fpb4l8BUUU8UWvdNlCfj-BZWhu-oDeEdjw04wjlOyFqlQ/viewform"className="text-blue-500 dark:text-blue-400 hover:text-yellow-500 dark:hover:text-yellow-400 transition-colors duration-200">this registration form</a> to sign up</span>,
                             ],

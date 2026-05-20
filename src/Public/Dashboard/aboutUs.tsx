@@ -30,9 +30,7 @@ export function AboutUs() {
             Join Us Today
           </h2>
             <p className="mt-6 text-lg font-semibold text-gray-900 dark:text-gray-300 sm:text-xl/8 leading-relaxed">
-            Here at Quantum, we strive to create a culture that values respect, integrity, and curiosity.
-            We believe that our success is driven by our people, and we are committed to fostering an 
-            inclusive environment where everyone can thrive.
+            The ultimate goal of Kyuki-do lies neither in victory nor in defeat, but in the perfection of the character of its participants.
             </p>
         </div>
 
