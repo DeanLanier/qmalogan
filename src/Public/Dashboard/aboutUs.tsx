@@ -30,7 +30,7 @@ export function AboutUs() {
             Join Us Today
           </h2>
             <p className="mt-6 text-lg font-semibold text-gray-900 dark:text-gray-300 sm:text-xl/8 leading-relaxed">
-            The ultimate goal of Kyuki-do lies neither in victory nor in defeat, but in the perfection of the character of its participants.
+            The ultimate goal at Quantum lies neither in victory nor in defeat, but in the perfection of the character of its participants.
             </p>
         </div>
 
