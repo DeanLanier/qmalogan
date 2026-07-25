@@ -1,60 +1,21 @@
-import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { NavBar, Dashboard, Events_Schedule, Resources, Forms, Tenets, Pledges, Judo, Forms12,
   Forms11, Forms10, Forms9, Forms8, Forms7, Forms6, Forms5, Forms4, Forms3, Forms2, Forms1, Forms0, Footer,
-  TermsAndConditions, PrivacyPolicy, CookiesPolicy, Settings, Admin
+  TermsAndConditions, PrivacyPolicy, CookiesPolicy
 } from './index';
 import './App.css';
 
 function App() {
-  const [isSignedIn, setIsSignedIn] = useState<boolean>(() => {
-    const savedSignedIn = localStorage.getItem('isSignedIn');
-    return savedSignedIn ? JSON.parse(savedSignedIn) : false;
-  });
-  const [userRole, setUserRole] = useState<string | null>(() => {
-    return localStorage.getItem('userRole');
-  });
-
-  const handleSignInSuccess = (role: string) => {
-    setIsSignedIn(true);
-    setUserRole(role);
-    localStorage.setItem('isSignedIn', JSON.stringify(true));
-    localStorage.setItem('userRole', role);
-  };
-
-  const handleSignOut = () => {
-    setIsSignedIn(false);
-    setUserRole(null);
-    localStorage.removeItem('isSignedIn');
-    localStorage.removeItem('userRole');
-  };
-
-  useEffect(() => {
-    const savedSignedIn = localStorage.getItem('isSignedIn');
-    const savedUserRole = localStorage.getItem('userRole');
-    if (savedSignedIn) {
-      setIsSignedIn(JSON.parse(savedSignedIn));
-    }
-    if (savedUserRole) {
-      setUserRole(savedUserRole);
-    }
-  }, []);
-
   return (
     <Router>
       <div className="App">
-        <NavBar
-          isSignedIn={isSignedIn}
-          onSignInSuccess={handleSignInSuccess}
-          onSignOut={handleSignOut}
-          isAdmin={userRole === 'admin'}
-        />
+        <NavBar />
         <Routes>
           <Route path="/" element={<Navigate to="/dashboard" />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/team" element={<div>Team Component</div>} />
           <Route path="/resources" element={<Resources />} />
-          <Route path="/events-schedule" element={<Events_Schedule isAdmin={userRole === 'admin'} />} />
+          <Route path="/events-schedule" element={<Events_Schedule />} />
           <Route path="/resources/info/forms" element={<Forms />} />
           <Route path="/resources/info/tenets" element={<Tenets />} />
           <Route path="/resources/info/pledges" element={<Pledges />} />
@@ -75,8 +36,6 @@ function App() {
           <Route path="/terms" element={<TermsAndConditions />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/cookies" element={<CookiesPolicy />} />
-          <Route path="/settings" element={<Settings />} />
-          <Route path="/admin" element={userRole === 'admin' ? <Admin /> : <Navigate to="/dashboard" />} />
         </Routes>
         <Footer />
       </div>
