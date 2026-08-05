@@ -11,6 +11,14 @@
   </head>
   <body>
     <div id="root"></div>
+    <script type="text/javascript">
+      // Retrieve the last visited page from session storage
+      var lastVisitedPage = sessionStorage.getItem('lastVisitedPage');
+      // Redirect to the last visited page
+      if (lastVisitedPage) {
+        window.history.replaceState(null, null, lastVisitedPage);
+      }
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

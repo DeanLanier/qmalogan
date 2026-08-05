@@ -1,5 +1,5 @@
 // Public Components
-export { default as NavBar } from './navbar/nav';
+export { NavBar } from './navbar/nav';
 export { Dashboard } from './Dashboard/dashboard';
 export { Events_Schedule } from './Calendar/events_schedule';
 export { Resources} from './Resources/Resources';
@@ -26,8 +26,3 @@ export { Forms3 } from './Resources/info/forms/3';
 export { Forms2 } from './Resources/info/forms/2';
 export { Forms1 } from './Resources/info/forms/1';
 export { Forms0 } from './Resources/info/forms/0';
-
-
-// User Only Components
-export { default as Settings } from '../User/settings';
-export { default as Admin } from '../User/admin';
