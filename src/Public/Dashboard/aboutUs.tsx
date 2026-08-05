@@ -1,15 +1,15 @@
 import dojoBG from './DojoBG.JPG';
 
 const stats = [
-  { name: 'Current Students', value: '200+' },
-  { name: 'Coaches', value: '3' },
-  { name: 'Days Per Week', value: '4' },
-  { name: 'Attendance', value: 'Unlimited' },
+  { name: 'CONFIDENCE', value: 'Built through challenge. Forge beliefs in yourself.' },
+  { name: 'DISCIPLINE', value: 'Habits that last.' },
+  { name: 'FOCUS', value: 'Listen. Learn. Apply.' },
+  { name: 'CHARACTER', value: 'Black belts in life.' },
 ];
 
 export function AboutUs() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-100 dark:bg-gray-900 py-24 sm:py-32 h-[calc(50vh-4rem)] min-h-[50rem] transition-colors duration-300">
+    <div className="relative isolate overflow-hidden bg-gray-100 dark:bg-gray-900 py-24 sm:py-32 h-[calc(62vh-4rem)] sm:h-[calc(50vh-4rem)] min-h-[62rem] sm:min-h-[50rem] transition-colors duration-300">
       {/* Background Image + Conditional Overlay */}
       <div className="absolute inset-0 -z-10">
         <img
@@ -26,9 +26,9 @@ export function AboutUs() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           {/* Header */}
-          <h2 className="text-5xl font-bold tracking-tight text-gray-800 dark:text-white sm:text-7xl leading-tight">
+          <h1 className="text-5xl font-bold tracking-tight text-gray-800 dark:text-white sm:text-7xl leading-tight">
             Join Us Today
-          </h2>
+          </h1>
             <p className="mt-6 text-lg font-semibold text-gray-900 dark:text-gray-300 sm:text-xl/8 leading-relaxed">
             The ultimate goal at Quantum lies neither in victory nor in defeat, but in the perfection of the character of its participants.
             </p>
@@ -36,7 +36,10 @@ export function AboutUs() {
 
         {/* Stats Section */}
         <div className="mx-auto mt-16 max-w-2xl lg:mx-0 lg:max-w-none">
-          <dl className="grid grid-cols-2 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-gray-800 dark:text-white mb-10">
+            Why Quantum?
+        </h2>
+          <dl className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
               <div
                 key={stat.name}
@@ -46,10 +49,10 @@ export function AboutUs() {
                   lg:hover:scale-105 lg:hover:bg-gray-300 dark:lg:hover:bg-gray-700
                   active:bg-gray-300 dark:active:bg-gray-700 active:scale-100" 
               >
-                <dt className="text-base font-medium text-gray-600 dark:text-gray-400">
+                <dt className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white">
                   {stat.name}
                 </dt>
-                <dd className="text-4xl font-bold text-gray-800 dark:text-white">
+                <dd className="text-base font-medium text-gray-600 dark:text-gray-400">
                   {stat.value}
                 </dd>
               </div>
