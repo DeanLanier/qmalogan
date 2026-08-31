@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
             {/* Company Section */}
             <FooterSection
               title="Company"
-              links={["dashboard#about", 
+              links={["#about", 
                 // "Meet the Team"
             ]}
                 linksNames={["About", 
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
             {/* Helpful Links Section */}
             <FooterSection
               title="Helpful Links"
-              links={["dashboard#contact", "dashboard#faq"]}
+              links={["#contact", "#faq"]}
               linksNames={["Contact", "FAQs"]}
             />
 

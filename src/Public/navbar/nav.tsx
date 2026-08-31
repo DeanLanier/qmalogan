@@ -27,8 +27,8 @@ export function NavBar() {
             </div>
             <div className="hidden sm:ml-6 sm:block content-center">
               <div className="flex space-x-4">
-                <Link to="/dashboard" className="px-3 py-2 rounded-md text-sm font-medium text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
-                  Dashboard
+                <Link to="/" className="px-3 py-2 rounded-md text-sm font-medium text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                  Home
                 </Link>
                 <Link to="/resources" className="px-3 py-2 rounded-md text-sm font-medium text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
                   Resources
@@ -44,8 +44,8 @@ export function NavBar() {
 
       <Disclosure.Panel className="sm:hidden">
         <div className="space-y-1 px-2 pt-2 pb-3">
-          <Link to="/dashboard" className="block px-3 py-2 rounded-md text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
-            Dashboard
+          <Link to="/" className="block px-3 py-2 rounded-md text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+            Home
           </Link>
           <Link to="/resources" className="block px-3 py-2 rounded-md text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
             Resources
