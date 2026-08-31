@@ -1,5 +1,5 @@
 import { Events } from "./events";
-import { Schedule } from './schedule';
+import { LoganSchedule, SmithfieldSchedule } from './schedule';
 
 export function Events_Schedule() {
     return (
@@ -15,8 +15,9 @@ export function Events_Schedule() {
                 {/* Events Component */}
                 <Events />
 
-                {/* Schedule Component */}
-                <Schedule />
+                {/* Schedule Components */}
+                <LoganSchedule />
+                <SmithfieldSchedule />
             </div>
         </div>
     );
