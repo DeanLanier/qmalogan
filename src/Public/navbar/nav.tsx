@@ -17,7 +17,7 @@ export function NavBar() {
               <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-open:block" />
             </Disclosure.Button>
           </div>
-          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start content-center">
+          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start content-center self-stretch">
             <div className="flex shrink-0 items-center content-center sm:justify-center">
               <img
                 alt="Quantum Martial Arts"
