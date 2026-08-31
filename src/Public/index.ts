@@ -1,6 +1,6 @@
 // Public Components
 export { NavBar } from './navbar/nav';
-export { Dashboard } from './Dashboard/dashboard';
+export { Home } from './Home/home';
 export { Events_Schedule } from './Calendar/events_schedule';
 export { Resources} from './Resources/Resources';
 export { Forms } from './Resources/info/Forms';

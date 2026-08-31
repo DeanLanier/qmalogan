@@ -1,18 +1,33 @@
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import { NavBar, Dashboard, Events_Schedule, Resources, Forms, Tenets, Pledges, Judo, Forms12,
+import { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from 'react-router-dom';
+import { NavBar, Home, Events_Schedule, Resources, Forms, Tenets, Pledges, Judo, Forms12,
   Forms11, Forms10, Forms9, Forms8, Forms7, Forms6, Forms5, Forms4, Forms3, Forms2, Forms1, Forms0, Footer,
   TermsAndConditions, PrivacyPolicy, CookiesPolicy
 } from './index';
 import './App.css';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    document.documentElement.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant"
+    });
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
       <div className="App">
+        <ScrollToTop /> 
         <NavBar />
         <Routes>
-          <Route path="/" element={<Navigate to="/dashboard" />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/" element={<Home />} />
           <Route path="/team" element={<div>Team Component</div>} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/events-schedule" element={<Events_Schedule />} />
@@ -36,7 +51,7 @@ function App() {
           <Route path="/terms" element={<TermsAndConditions />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/cookies" element={<CookiesPolicy />} />
-          <Route path="*" element={<Navigate to="/dashboard" />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </div>

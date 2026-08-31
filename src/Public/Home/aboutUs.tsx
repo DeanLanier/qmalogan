@@ -9,7 +9,7 @@ const stats = [
 
 export function AboutUs() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-100 dark:bg-gray-900 py-24 sm:py-32 h-[calc(66vh-4rem)] sm:h-[calc(50vh-4rem)] min-h-[66rem] sm:min-h-[50rem] transition-colors duration-300">
+    <div id="about" className="relative isolate overflow-hidden bg-gray-100 dark:bg-gray-900 py-24 sm:py-32 h-[calc(66vh-4rem)] sm:h-[calc(50vh-4rem)] min-h-[66rem] sm:min-h-[50rem] transition-colors duration-300">
       {/* Background Image + Conditional Overlay */}
       <div className="absolute inset-0 -z-10">
         <img

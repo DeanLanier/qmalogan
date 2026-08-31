@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Footer: React.FC = () => {
   return (
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
             {/* Company Section */}
             <FooterSection
               title="Company"
-              links={["dashboard", 
+              links={["#about", 
                 // "Meet the Team"
             ]}
                 linksNames={["About", 
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
             {/* Helpful Links Section */}
             <FooterSection
               title="Helpful Links"
-              links={["#Contact", "dashboard"]}
+              links={["#contact", "#faq"]}
               linksNames={["Contact", "FAQs"]}
             />
 

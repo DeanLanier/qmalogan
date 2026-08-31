@@ -1,3 +1,18 @@
+import { JSX } from "react";
+
+interface Flyer {
+    title: string;
+    url: string;
+}
+
+interface Event{
+    event: string;
+    description: (string | JSX.Element)[];
+    flyers: Flyer[];
+}
+
+const events: Event[] = [];
+
 export function Events() {
     return (
         <section className="p-10 bg-white dark:bg-gray-900 rounded-lg shadow-lg transition-colors duration-300">
@@ -11,28 +26,7 @@ export function Events() {
 
                 {/* List of events */}
                 <ul className="space-y-10">
-                    {[
-                        {
-                            event: "Summer Camps",
-                            description: [
-                                <span>Please fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSdI_Fpb4l8BUUU8UWvdNlCfj-BZWhu-oDeEdjw04wjlOyFqlQ/viewform"className="text-blue-500 dark:text-blue-400 hover:text-yellow-500 dark:hover:text-yellow-400 transition-colors duration-200">this registration form</a> to sign up</span>,
-                            ],
-                            flyers: [
-                                {
-                                    title: "Basics Summer Camp",
-                                    url: "/flyers/basics.jpg",
-                                },
-                                {
-                                    title: "Girls Confidence Summer Camp",
-                                    url: "/flyers/girls-confidence.jpg",
-                                },
-                                {
-                                    title: "Confidence Summer Camp",
-                                    url: "/flyers/confidence.jpg",
-                                }
-                            ],
-                        },
-                    ].map(({ event, description, flyers }) => (
+                    {events.length ? events.map(({ event, description, flyers }) => (
                         <li
                             key={event}
                             className="flex flex-col gap-4 bg-gray-100 dark:bg-gray-800 p-4 rounded-md shadow-md transition-colors"
@@ -65,7 +59,7 @@ export function Events() {
                                 ))}
                             </div>
                         </li>
-                    ))}
+                    )) : "No upcoming events"}
                 </ul>
             </div>
         </section>

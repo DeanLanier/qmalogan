@@ -84,7 +84,7 @@ const TermsAndConditions: React.FC = () => {
         <h2 className="text-2xl font-bold mb-2">11. Contact Us</h2>
         <p className="text-gray-700 dark:text-gray-300">If you have any questions about these Terms and Conditions, you can contact us at:</p>
         <p className="text-gray-700 dark:text-gray-300">Email: <a href="mailto:logankarate@gmail.com" className="text-blue-500 dark:text-blue-400 hover:text-yellow-500">logankarate@gmail.com</a></p>
-        <p className="text-gray-700 dark:text-gray-300">Address: 917 W 600 N STE 109, Logan, UT 84321</p>
+        <p className="text-gray-700 dark:text-gray-300">Address: 661 W 1725 N, Logan, UT 84321</p>
         <p className="text-gray-700 dark:text-gray-300">Phone: (435) 278-9272</p>
       </div>
     </section>
