@@ -9,11 +9,11 @@ export function FAQ() {
     };
 
     const faqs = [
-        { question: "How can I pay for class?", answer: "You can pay using credit card, debit card, cash, or Venmo." },
         { question: "What can I expect from the first day of Class?", answer: "You will meet with one of the coaches and they will explain what we will be working of for the day. From there you will get to meet with other students, who will help you grow as you continue to come to class." },
-        { question: "What are your class hours?", answer: <>We have a few different class hours so if you would like to pop over to our <Link to="/events-schedule" className="text-yellow-500 dark:text-yellow-400 underline">Schedule Page</Link>.</> },
+        { question: "What are your class hours?", answer: <span>We have a few different class hours so see our <Link to="/events-schedule" className="text-yellow-500 dark:text-yellow-400 underline">Schedule Page</Link>.</span> },
         { question: "Do I need a referral?", answer: "No referral is needed. You can come in anytime to observe and decide if Kyuki-do is for you."},
-        { question: "Will I get injured?", answer: "Injuries can happen when pushing yourself in class, if you aren't following the proper techniques. Ask questions when needed and follow what the coaches and black belts teach you. This will help prevent possible injury." }
+        { question: "Will I get injured?", answer: "Injuries can happen when pushing yourself in class, if you aren't following the proper techniques. Ask questions when needed and follow what the coaches and black belts teach you. This will help prevent possible injury." },
+        { question: "How can I pay for class?", answer: "You can pay using credit card, debit card, cash, or Venmo." },
     ];
 
     return (
@@ -42,7 +42,7 @@ export function FAQ() {
                                     {item.question}
                                 </h3>
                                 <svg
-                                    className={`w-6 h-6 text-yellow-500 transform transition-transform duration-300 ${
+                                    className={`w-6 h-6 shrink-0 text-yellow-500 transform transition-transform duration-300 ${
                                         current === index ? 'rotate-45' : 'rotate-0'
                                     }`}
                                     fill="none"
@@ -57,7 +57,7 @@ export function FAQ() {
                             {/* Expandable Answer Section */}
                             <div
                                 className={`transition-all duration-300 ${
-                                    current === index ? 'max-h-40 opacity-100 py-4 px-6' : 'max-h-0 opacity-0 py-0 px-6'
+                                    current === index ? 'max-h-100 opacity-100 py-4 px-6' : 'max-h-0 opacity-0 py-0 px-6'
                                 }`}
                             >
                                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
