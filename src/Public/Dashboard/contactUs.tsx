@@ -1,8 +1,6 @@
 export function ContactUs() {
     return (
-        <section 
-            className="flex flex-col items-center justify-start py-12 w-full custom-dark transition-colors duration-300"
-        >
+        <section id="contact" className="flex flex-col items-center justify-start py-12 w-full custom-dark transition-colors duration-300">
             {/* Header */}
             <h2 className="text-4xl font-bold tracking-tight text-gray-800 dark:text-white text-center mb-10">
                 Contact Us

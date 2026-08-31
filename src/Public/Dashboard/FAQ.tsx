@@ -17,7 +17,7 @@ export function FAQ() {
     ];
 
     return (
-        <section className="bg-gray-50 dark:bg-gray-800 py-16 px-8 rounded-2xl shadow-lg mt-12 mx-4 sm:mx-8 xl:mx-auto max-w-7xl transition-colors duration-300">
+        <section id="faq" className="bg-gray-50 dark:bg-gray-800 py-16 px-8 rounded-2xl shadow-lg mt-12 mx-4 sm:mx-8 xl:mx-auto max-w-7xl transition-colors duration-300">
             <div className="container mx-auto">
                 {/* Header */}
                 <h2 className="text-4xl font-bold tracking-tight text-gray-800 dark:text-white text-center mb-10">
