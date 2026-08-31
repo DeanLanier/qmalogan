@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import logo from './qma-logo.png'; // Adjust the path to your logo
+import logo from './qma-logo.png';
 
 export function NavBar() {
   return (
@@ -20,7 +20,7 @@ export function NavBar() {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start content-center">
             <div className="flex shrink-0 items-center content-center sm:justify-center">
               <img
-                alt="Your Company"
+                alt="Quantum Martial Arts"
                 src={logo}
                 className="w-25 pt-8 z-1"
               />
