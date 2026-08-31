@@ -130,7 +130,7 @@ export default function PrivacyPolicy() {
                     <ul className="list-inside mt-2 text-gray-700 dark:text-gray-300">
                         <li><p className="text-gray-700 dark:text-gray-300"><strong>Email:</strong> <a href="mailto:logankarate@gmail.com" className="text-blue-500 dark:text-blue-400 hover:text-yellow-500">logankarate@gmail.com</a></p></li>
                         <li><strong>Phone:</strong> (435) 278-9272</li>
-                        <li><strong>Address:</strong> 917 W 600 N STE 109, Logan, UT 84321</li>
+                        <li><strong>Address:</strong> 661 W 1725 N, Logan, UT 84321</li>
                     </ul>
                 </div>
             </div>

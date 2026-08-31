@@ -20,7 +20,7 @@ export function ContactUs() {
                 </div>
                 <div className="flex w-full gap-5">
                     <dt className="font-semibold w-1/3 text-right text-gray-600 dark:text-gray-400 ">Address</dt>
-                    <dd className="ml-auto w-2/3"><a href="geo:0,0?q=917+W+600+N+STE+109,+Logan,+UT+84321" className="text-blue-500 dark:text-blue-400 hover:text-yellow-500">917 W 600 N STE 109, Logan, UT 84321</a></dd>
+                    <dd className="ml-auto w-2/3"><a href="geo:0,0?q=661+W+1725+N,+Logan,+UT+84321" className="text-blue-500 dark:text-blue-400 hover:text-yellow-500">661 W 1725 N, Logan, UT 84321</a></dd>
                 </div>
             </dl>
         </section>
