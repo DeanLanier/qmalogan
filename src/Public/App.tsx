@@ -1,14 +1,30 @@
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from 'react-router-dom';
 import { NavBar, Home, Events_Schedule, Resources, Forms, Tenets, Pledges, Judo, Forms12,
   Forms11, Forms10, Forms9, Forms8, Forms7, Forms6, Forms5, Forms4, Forms3, Forms2, Forms1, Forms0, Footer,
   TermsAndConditions, PrivacyPolicy, CookiesPolicy
 } from './index';
 import './App.css';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    document.documentElement.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant"
+    });
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
       <div className="App">
+        <ScrollToTop /> 
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
